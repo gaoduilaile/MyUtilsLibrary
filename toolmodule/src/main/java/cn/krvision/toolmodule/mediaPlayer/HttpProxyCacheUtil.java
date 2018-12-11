@@ -1,4 +1,4 @@
-package cn.krvision.toolmodule;
+package cn.krvision.toolmodule.mediaPlayer;
 
 import android.content.Context;
 
@@ -10,18 +10,22 @@ import com.danikula.videocache.HttpProxyCacheServer;
  */
 public class HttpProxyCacheUtil {
 
-    private static HttpProxyCacheServer audioProxy;
 
     private static class SingletonHodler {
         public static HttpProxyCacheUtil instance = new HttpProxyCacheUtil();
     }
 
-    private static HttpProxyCacheUtil getInstance() {
+    public static HttpProxyCacheUtil getInstance() {
         return SingletonHodler.instance;
     }
 
-    public static HttpProxyCacheServer getAudioProxy(Context context) {
+    public static HttpProxyCacheServer getHttpProxyCacheServer(Context context) {
         return new HttpProxyCacheServer(context);
     }
+
+
+
+
+
 
 }
