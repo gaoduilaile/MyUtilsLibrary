@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_adapter_comment_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bkg_creat_needs_0dp"
+    android:orientation="vertical">
+
+    <include layout="@layout/adapter_comment_item1" />
+
+    <include layout="@layout/adapter_comment_item2" />
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--标题栏背景色-->
+    <color name="transparent">#00000000</color>
+    <color name="black">#ff000000</color>
+    <!-- 新的eico特性 -->
+    <color name="color_FFFFFF">#FFFFFF</color>
+    <color name="color_999999">#999999</color>
+    <color name="ls_color_666666">#666666</color>
+    <!-- popWindow相关颜色-->
+
+    <color name="COLOR_FFFFFF">#FFFFFF</color>
+    <color name="COLOR_E97B26">#E97B26</color>
+    <color name="COLOR_DDDDDD">#DDDDDD</color>
+
+    <color name="color_898989">#898989</color>
+    <color name="color_00000000">#00000000</color>
+    <color name="color_000000">#000000</color>
+
+    <!--free-->
+    <color name="color_4c2727">#4c2727</color>
+    <color name="color_e97b26">#e97b26</color>
+    <color name="color_fa7300">#fa7300</color>
+    <color name="color_ed914b">#ed914b</color>
+
+
+    <color name="color_e1e1e1">#e1e1e1</color>
+    <color name="color_505462">#505462</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_black">#000</color>
+
+    <color name="color_EAEAEA">#EAEAEA</color>
+
+    <color name="color_66000000">#66000000</color>
+    <color name="color_80000000">#80000000</color>
+
+    <color name="color_C0C7CF">#C0C7CF</color>
+    <color name="color_12172B">#12172B</color>
+
+    <color name="color_007aff">#007aff</color>
+    <color name="color_ff00">#ff00</color>
+    <color name="color_e0473c">#e0473c</color>
+
+    <color name="tab_normal_color">#ffffff</color>
+    <color name="tab_pressed_color">#1296db</color>
+    <color name="color_ff4848">#ff4848</color>
+    <color name="color_554233">#554233</color>
+    <color name="color_422277b9">#2277b9</color>
+    <color name="color_F49954">#F49954</color>
+    <color name="color_F5F5F5">#F5F5F5</color>
+    <color name="color_E87B26">#E87B26</color>
+
+    <color name="color_f2f7fc">#F2F7FC</color>
+    <color name="color_c2364b">#C2364B</color>
+    <color name="color_f5455e">#F5455E</color>
+    <color name="color_grey_d0d0d0">#d0d0d0</color>
+    <color name="video_call_peer_close_cameral_text_shadow">#484848</color>
+    <color name="video_call_peer_close_cameral_text_color">#f1f1f1</color>
+    <color name="t_av_chat_setting_bar">#3C4149</color>
+
+    <color name="color_red_f04c62">#f04c62</color>
+    <color name="color_gray_alpha40">#66000000</color>
+    <color name="color_b3b3b3">#b3b3b3</color>
+    <color name="split_line_grey_color_d9d9d9">#d9d9d9</color>
+    <color name="color_black_333333">#333333</color>
+    <color name="color_grey_999999">#999999</color>
+    <color name="color_gray_d9d9d9">#d9d9d9</color>
+    <color name="color_blue_0888ff">#0888ff</color>
+    <color name="white">#ffffff</color>
+
+    <color name="color_3d88f7">#3d88f7</color>
+    <color name="color_1D2131">#1D2131</color>
+    <color name="color_4c27270">#4c2727</color>
+    <color name="color_C4C4C4">#C4C4C4</color>
+    <color name="color_0084F6">#0084F6</color>
+    <color name="color_bg">#000b2c</color>
+
+</resources>
