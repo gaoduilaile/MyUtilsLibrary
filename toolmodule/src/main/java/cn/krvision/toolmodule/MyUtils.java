@@ -1,5 +1,6 @@
 package cn.krvision.toolmodule;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Context;
@@ -11,9 +12,13 @@ import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
+import android.location.Address;
+import android.location.Geocoder;
+import android.location.Location;
 import android.location.LocationManager;
 import android.media.ExifInterface;
 import android.net.Uri;
+import android.support.v4.app.ActivityCompat;
 import android.text.TextUtils;
 import android.widget.Toast;
 
@@ -119,6 +124,36 @@ public class MyUtils {
         } else if (prodiverlist.contains(LocationManager.GPS_PROVIDER)) {
             return LocationManager.GPS_PROVIDER;
         }
+        return null;
+    }
+
+    public static String beginLocation(Activity mContext) {
+        LocationManager locationManager = (LocationManager) mContext.getSystemService(Context.LOCATION_SERVICE);
+        String provider = judgeProvider(locationManager);
+        Location location = null;
+        if (provider != null) {
+            if (ActivityCompat.checkSelfPermission(mContext, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
+                    && ActivityCompat.checkSelfPermission(mContext, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            }
+            location = locationManager.getLastKnownLocation(provider);
+        }
+
+
+        List<Address> addList = null;
+        try {
+            Geocoder ge = new Geocoder(mContext);
+            addList = ge.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        if (addList != null && addList.size() > 0) {
+            for (int i = 0; i < addList.size(); i++) {
+                Address ad = addList.get(i);
+
+                return ad.getLocality();
+            }
+        }
+
         return null;
     }
 

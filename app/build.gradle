@@ -86,4 +86,13 @@ dependencies {
     implementation 'com.jakewharton:butterknife:8.4.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
 
+    implementation rootProject.ext.dependencies.rxjava
+    implementation rootProject.ext.dependencies.rxandroid
+    implementation rootProject.ext.dependencies.retrofit2_retrofit
+    implementation rootProject.ext.dependencies.retrofit2_converter
+    implementation rootProject.ext.dependencies.retrofit2_adapter
+    implementation rootProject.ext.dependencies.okhttp3_okhttp
+    implementation rootProject.ext.dependencies.okhttp3_interceptor
+    implementation rootProject.ext.dependencies.gson
+
 }
