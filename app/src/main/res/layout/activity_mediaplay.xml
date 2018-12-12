@@ -18,6 +18,20 @@
         app:controller_layout_id="@layout/video_play_control3"
         />
 
-  <!--  <include layout="@layout/video_play_control"/>-->
+    <Button
+        android:onClick="musicClick"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="音频播放"/>
+
+
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <!--  <include layout="@layout/video_play_control"/>-->
 
 </LinearLayout>

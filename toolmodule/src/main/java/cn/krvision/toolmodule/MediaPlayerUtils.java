@@ -47,7 +47,7 @@ public class MediaPlayerUtils {
         this.func = func;
     }
 
-    private void startVoice(String voiceUrl) {
+    public void startVoice(String voiceUrl) {
         mediaStop();
         HttpProxyCacheServer httpProxyCacheServer = getHttpProxyCacheServer(context);
         String proxyUrl = httpProxyCacheServer.getProxyUrl(voiceUrl);
@@ -64,13 +64,13 @@ public class MediaPlayerUtils {
         func.onStart();
     }
 
-    private void getCurrentPosition() {
+    public void getCurrentPosition() {
         if (mediaPlayer != null && mediaPlayer.isPlaying() && voicePlaying) {
             currentPosition = mediaPlayer.getCurrentPosition();
         }
     }
 
-    private void playOrPause() {
+    public void playOrPause() {
         if (mediaPlayer == null) return;
 
         if (mediaPlayer.isPlaying() && voicePlaying) {
@@ -84,7 +84,7 @@ public class MediaPlayerUtils {
         }
     }
 
-    private void intiMediaPlayer(Activity context) {
+    public void intiMediaPlayer(Activity context) {
         this.context = context;
         this.httpProxyCacheServer = new HttpProxyCacheServer(context);
         if (mediaPlayer == null) {
@@ -117,7 +117,7 @@ public class MediaPlayerUtils {
         }
     }
 
-    private void mediaStop() {
+    public void mediaStop() {
         if (timer != null) {
             timer.cancel();
             timer = null;
