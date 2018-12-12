@@ -489,7 +489,6 @@ public class BleService extends Service {
                 if (!characteristicData) {
                     return;
                 }
-
                 break;
             case ACTION_DATA_AVAILABLE://读取响应的蓝牙数据
                 mConnectionState = Constants.BLUETOOTH_AVAILABLE;

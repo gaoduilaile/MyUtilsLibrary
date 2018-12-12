@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll1"
+    android:background="@color/color_1D2131"
+    android:orientation="vertical">
+
+    <TextView
+        android:background="@color/color_blue_0888ff"
+        android:layout_marginTop="50dp"
+        android:onClick="sortClick"
+        android:id="@+id/tv_sort"
+        android:layout_width="@dimen/dp80"
+        android:layout_height="@dimen/dp49"
+        android:drawableRight="@drawable/arrow_down"
+        android:gravity="center"
+        android:text="制定位置"
+        android:textColor="@color/color_FFFFFF"
+        android:textSize="@dimen/sp15" />
+
+
+    <TextView
+        android:background="@color/color_blue_0888ff"
+        android:layout_marginTop="50dp"
+        android:onClick="bottomClick"
+        android:layout_width="@dimen/dp80"
+        android:layout_height="@dimen/dp49"
+        android:drawableRight="@drawable/arrow_down"
+        android:gravity="center"
+        android:text="底部弹出"
+        android:textColor="@color/color_FFFFFF"
+        android:textSize="@dimen/sp15" />
+
+
+</LinearLayout>

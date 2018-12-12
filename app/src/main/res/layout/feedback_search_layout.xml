@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="58dp"
+    android:background="@color/color_12171D"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/color_12171D"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/fragment_feedback_search_bg"
+            android:cursorVisible="true"
+            android:gravity="center_vertical"
+            android:hint="写评论，攒积分"
+            android:inputType="text|textMultiLine"
+            android:paddingLeft="@dimen/dp10"
+            android:textColor="@color/color_FFFFFF"
+            android:textColorHint="@color/color_909090"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/sp12" />
+
+        <TextView
+            android:id="@+id/tv_send"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/fragment_feedback_search_send_bg"
+            android:gravity="center"
+            android:text="发送"
+            android:textColor="@color/color_FFFFFF"
+            android:textSize="@dimen/sp12" />
+
+    </RelativeLayout>
+
+</LinearLayout>

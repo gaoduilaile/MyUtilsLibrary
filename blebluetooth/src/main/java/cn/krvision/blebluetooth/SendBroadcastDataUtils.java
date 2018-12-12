@@ -10,11 +10,7 @@ import android.content.Intent;
 public class SendBroadcastDataUtils {
 
     public static void sendData(Context context, int code) {
-        try {
-            Thread.sleep(100);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
         Intent intent = new Intent();
         intent.setAction(Constants.BROADCAST_FROM_ACTIVITY);
         intent.putExtra("code", code);
@@ -22,11 +18,6 @@ public class SendBroadcastDataUtils {
     }
 
     public static void sendData(Context context, int code, String name, String address) {
-        try {
-            Thread.sleep(100);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         Intent intent = new Intent();
         intent.setAction(Constants.BROADCAST_FROM_ACTIVITY);
         intent.putExtra("code", code);
