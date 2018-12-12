@@ -1,12 +1,9 @@
-package cn.heima.myutilslibrary.mediaPlayer;
+package cn.krvision.toolmodule;
 
 import android.content.Context;
 import android.media.AudioManager;
 import android.media.SoundPool;
 import android.util.Log;
-
-import cn.heima.myutilslibrary.MainApplication;
-import cn.heima.myutilslibrary.R;
 
 /**
  * SoundPool 铃声尽量不要超过1M
@@ -25,19 +22,19 @@ public class AVChatSoundPlayer {
 
     private static AVChatSoundPlayer instance = null;
 
-    public static AVChatSoundPlayer instance() {
+    public static AVChatSoundPlayer instance(Context context) {
         if (instance == null) {
             synchronized (AVChatSoundPlayer.class) {
                 if (instance == null) {
-                    instance = new AVChatSoundPlayer();
+                    instance = new AVChatSoundPlayer(context);
                 }
             }
         }
         return instance;
     }
 
-    public AVChatSoundPlayer() {
-        this.context = MainApplication.mContext;
+    public AVChatSoundPlayer(Context context) {
+        this.context = context;
     }
 
     public void stop() {
@@ -57,9 +54,9 @@ public class AVChatSoundPlayer {
     /**
      * 播放本地铃声
      */
-    public void play() {
+    public void play(int resId) {
         initSoundPool();
-        soundId = soundPool.load(context, R.raw.helpsound, 1);
+        soundId = soundPool.load(context, resId, 1);
     }
 
     /**

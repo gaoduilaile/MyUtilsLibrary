@@ -1,6 +1,7 @@
-package cn.krvision.toolmodule.mediaPlayer;
+package cn.krvision.toolmodule;
 
 import android.app.Activity;
+import android.content.Context;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 
@@ -38,13 +39,17 @@ public class MediaPlayerUtils {
         void onCompletion();
     }
 
+    private   HttpProxyCacheServer getHttpProxyCacheServer(Context context) {
+        return new HttpProxyCacheServer(context);
+    }
+
     public void setMediaPlayerUtilsFunc(MediaPlayerUtilsFunc func) {
         this.func = func;
     }
 
     private void startVoice(String voiceUrl) {
         mediaStop();
-        HttpProxyCacheServer httpProxyCacheServer = HttpProxyCacheUtil.getInstance().getHttpProxyCacheServer(context);
+        HttpProxyCacheServer httpProxyCacheServer = getHttpProxyCacheServer(context);
         String proxyUrl = httpProxyCacheServer.getProxyUrl(voiceUrl);
         try {
             mediaPlayer.reset();

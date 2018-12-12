@@ -1,4 +1,4 @@
-package cn.heima.myutilslibrary.mediaPlayer;
+package cn.krvision.toolmodule;
 
 import android.media.AudioFormat;
 import android.media.AudioManager;

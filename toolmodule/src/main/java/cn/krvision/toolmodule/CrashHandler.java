@@ -1,8 +1,5 @@
-package cn.heima.myutilslibrary;
+package cn.krvision.toolmodule;
 
-
-import cn.krvision.toolmodule.LogUtils;
-import cn.krvision.toolmodule.MyUtils;
 
 public class CrashHandler implements Thread.UncaughtExceptionHandler {
 

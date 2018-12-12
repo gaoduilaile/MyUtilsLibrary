@@ -10,6 +10,7 @@ import com.google.android.exoplayer2.ui.SimpleExoPlayerView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.heima.myutilslibrary.R;
+import cn.krvision.toolmodule.ExoplayerUtils;
 
 public class MediaPlayActivity extends AppCompatActivity {
 
