@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/MyUtilsLibrary.iml" filepath="$PROJECT_DIR$/MyUtilsLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/blebluetooth/blebluetooth.iml" filepath="$PROJECT_DIR$/blebluetooth/blebluetooth.iml" />
-      <module fileurl="file://$PROJECT_DIR$/contact/contact.iml" filepath="$PROJECT_DIR$/contact/contact.iml" />
       <module fileurl="file://$PROJECT_DIR$/toolmodule/toolmodule.iml" filepath="$PROJECT_DIR$/toolmodule/toolmodule.iml" />
     </modules>
   </component>

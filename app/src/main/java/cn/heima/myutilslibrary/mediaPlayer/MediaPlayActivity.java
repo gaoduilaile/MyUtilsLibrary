@@ -32,7 +32,7 @@ public class MediaPlayActivity extends AppCompatActivity {
 
         initExoPlayer();
 
-        initMediaPlayer();
+//        initMediaPlayer();
 
     }
 
