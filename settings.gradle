@@ -1,1 +1,1 @@
-include ':app', ':contact', ':blebluetooth',"toolmodule"
+include ':app', ':contact', ':blebluetooth', ':mvvmlibrary',"toolmodule"

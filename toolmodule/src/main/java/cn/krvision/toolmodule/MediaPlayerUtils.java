@@ -49,7 +49,6 @@ public class MediaPlayerUtils {
 
     public void startVoice(String voiceUrl) {
         mediaStop();
-        HttpProxyCacheServer httpProxyCacheServer = getHttpProxyCacheServer(context);
         String proxyUrl = httpProxyCacheServer.getProxyUrl(voiceUrl);
         try {
             mediaPlayer.reset();
@@ -85,8 +84,8 @@ public class MediaPlayerUtils {
     }
 
     public void intiMediaPlayer(Activity context) {
+        httpProxyCacheServer = getHttpProxyCacheServer(context);
         this.context = context;
-        this.httpProxyCacheServer = new HttpProxyCacheServer(context);
         if (mediaPlayer == null) {
             try {
                 mediaPlayer = new MediaPlayer();

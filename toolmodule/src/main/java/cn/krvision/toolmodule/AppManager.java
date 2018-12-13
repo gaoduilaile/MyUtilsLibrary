@@ -5,6 +5,8 @@ import android.app.Activity;
 import android.app.ActivityManager;
 import android.content.Context;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Stack;
 
 /**
@@ -12,6 +14,7 @@ import java.util.Stack;
  */
 public class AppManager {
     private static Stack<Activity> activityStack;
+    private static List<BaseFragment> fragmentList;
     private volatile static AppManager instance;
 
     private AppManager() {
@@ -20,7 +23,7 @@ public class AppManager {
     /**
      * 单一实例
      */
-    public static AppManager getAppManager() {
+    public static AppManager getInstance() {
         if (instance == null) {
             synchronized (AppManager.class){
                 if(instance==null){
@@ -177,4 +180,32 @@ public class AppManager {
             }
         }
     }
+
+
+
+
+
+    public void addFragment(int index, BaseFragment fragment) {
+        if (fragmentList == null) {
+            fragmentList = new ArrayList<>();
+        }
+        fragmentList.add(index, fragment);
+    }
+
+
+    public BaseFragment getFragment(int index) {
+        if (fragmentList != null) {
+            return fragmentList.get(index);
+        }
+        return null;
+    }
+
+
+    public List<BaseFragment> getAllFragment() {
+        if (fragmentList != null) {
+            return fragmentList;
+        }
+        return null;
+    }
+
 }
