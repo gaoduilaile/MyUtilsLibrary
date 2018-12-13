@@ -1,41 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/color_1D2131"
+    android:orientation="vertical"
     tools:context="cn.heima.myutilslibrary.MainActivity">
 
     <TextView
-        android:onClick="blebluetoothClick"
+        android:id="@+id/tv_bluetooth"
         style="@style/main_text_view_style"
         android:text="蓝牙连接" />
 
     <TextView
-        style="@style/main_text_view_style"
-        android:onClick="contactClick"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:background="@color/color_313540" />
 
+    <TextView
+        android:id="@+id/tv_contact"
+        style="@style/main_text_view_style"
         android:text="通讯率" />
 
     <TextView
-        style="@style/main_text_view_style"
-        android:onClick="pwsClick"
-
-        android:text="数字键盘" />
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:background="@color/color_313540" />
 
     <TextView
+        android:id="@+id/tv_video"
         style="@style/main_text_view_style"
-        android:onClick="viedPlay"
         android:text="视频播放" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:background="@color/color_313540" />
 
     <TextView
+        android:id="@+id/tv_pop"
         style="@style/main_text_view_style"
-        android:onClick="pop"
         android:text="pop弹窗测试" />
-
 
 </LinearLayout>
