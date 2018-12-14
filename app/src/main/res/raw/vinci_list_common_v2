@@ -1,0 +1,84 @@
+%NAME = CCCC;
+%MUSIC = CCCC;
+%APP = CCCC;
+%CONTACT = CCCC;
+%MOVIE = CCCC;
+%LOCATION = CCCC;
+
+$MUSIC_OP = (( 播放)[歌曲]);
+$MUSIC_CMD = ($MUSIC_OP)(%MUSIC);
+
+/*$MUSIC_CMD_SEM = $MUSIC_CMD #intention:MUSIC,ans:正在为您播放%MUSIC ,detail.cmd:play  # ; */
+
+$CONTACT_OP = (( 呼叫 | 打电话给)[联系人] ) ;
+$CONTACT_CMD = ($CONTACT_OP)(%CONTACT);
+
+/*$CONTACT_CMD_SEM = $CONTACT_CMD #intention:PHONE, ans:正在为您$CONTACT_OP %CONTACT, detail.name: %CONTACT # ;*/
+
+$MOVIE_OP = [( 打开 | 搜索 | 我想看)[电影名]] ;
+$MOVIE_CMD = ($MOVIE_OP)(%MOVIE);
+
+/* $MOVIE_CMD_SEM = $MOVIE_CMD #intention:MOVIE, ans:怎么说好呢……%MOVIE , detail.name:%MOVIE, detail.cmd:intention dont konw # ;*/
+
+$LOCATION_OP = [( 我要去 | 带我去)[地名]] ;
+$LOCATION_CMD = ($LOCATION_OP)(%LOCATION);
+
+/* $LOCATION_CMD_SEM = $LOCATION_CMD # intention:地名%LOCATION haole# ;*/
+
+
+$APP_OPEN = [ ( 打开 | 进入 | 去 | 跳到 | 进 | 去看 | 启动 | 切换到 ) [ 应用 ] ]  ;
+
+$APP_CLOSE = ( ( 关闭 | 退出 | 退掉 | 关掉 ) [ 应用 ] ) ;
+
+$APP_UNINSTALL = ( ( 卸载 | 卸掉 | 卸载掉 | 删除 | 删掉 ) [ 应用 ] )  ;
+
+$APP_UPDATE = ( ( 升级 | 更新 ) [ 应用 ] ) ;
+
+$APP_CMD = ( ( $APP_OPEN ) | ( $APP_CLOSE ) | ( $APP_UNINSTALL ) | ( $APP_UPDATE ) ) ( %APP ) ;
+
+/*$APP_UPDATE_SEM = $APP_CMD #intention:APP,ans:正在为你$APP_CLOSE $APP_OPEN $APP_UPDATE $APP_UNINSTALL %NAME ,detail.cmd:#APP_CLOSE#APP_OPEN#APP_UPDATE#APP_UNINSTALL,detail.name: %APP # ;*/
+
+$DIGIT = ( 一 | ( 二 | 两 ) | 三 | 四 | 五 | 六 | 七 | 八 | 九 | 十 ) ;
+$SECOND =  ( ( $DIGIT ) ( 秒 | 秒钟 ) ) ;
+$MIN = ( ( $DIGIT ) ( 分 | 分钟 ) ) ;
+$HALFMIN = ( 半分钟 ) ;
+$HOUR = ( ( $DIGIT ) [ 个 ] ( 小时 | 钟头 ) ) ;
+$HALFHOUR = ( 半 [ 个 ] ( 小时 | 钟头 ) ) ;
+$MINS = ( ( $MIN ) | ( $HALFMIN ) ) ;
+$HOURS = ( ( $HOUR ) | ( $HALFHOUR ) ) ;
+
+$FASTFORWARD = ( 快进 | 快跑 | 前进 | 往前 ) ;
+$REWIND = ( 快退 | 后退 | 往回 ) ;
+$SEEK = ( 跳到 | 跳去 | 去 | 快进到 | 快退到 | 跳回 | 跳回到 | 跳转到 ) ;
+$PLAY = ( 播放 | 开始播放 | 开始播 | 继续 | 继续播 ) ;
+$PAUSE = ( 暂停 | 先停一下 | 停一下 | 暂停一下 | 暂停一会儿 | 先停一会儿 ) ;
+$PLAYER_CMD_WITHTIME = ( ( $FASTFORWARD ) | ( $REWIND ) | ( $SEEK ) ) [ 第 ] [ $MIN ] [ $SECOND ] ;
+$PLAYER_CMD = ( ( $PLAYER_CMD_WITHTIME ) | ( $PLAY ) | ( $PAUSE ) ) ;
+
+/*$PLAYER_CMD_WITHTIME_SEM = $PLAYER_CMD_WITHTIME #intention:PLAYER,ans:已为您$FASTFORWARD$REWIND$SEEK $MIN :$SECOND ,detail.cmd.test:locate,detail.action:locate2,detail.second:200#*/
+/*$PLAY_SEM = $PLAY #intention:PLAYER,ans:正在为您播放,detail.action:play,detail.item:music,detail.second:200#;*/
+
+$SHUTDOWN_TIMEA = ( ( $HOURS ) | ( $MINS ) | ( $SECOND ) ) ;
+$SHUTDOWN_TIMEB = ( ( $HOURS ) ( $MIN ) ( $SECOND ) ) ;
+$SHUTDOWN_TIMEC = ( ( $HOURS ) ( $MIN ) ) ;
+$SHUTDOWN_TIMED = ( ( $HOURS ) ( $SECOND ) ) ;
+$SHUTDOWN_TIMEE = ( ( $MIN ) ( $SECOND ) ) ;
+$SHUTDOWN_TIME = ( $SHUTDOWN_TIMEA | $SHUTDOWN_TIMEB | $SHUTDOWN_TIMEC | $SHUTDOWN_TIMED | $SHUTDOWN_TIMEE ) ;
+$SHUTDOWN_CMD = [ ( $SHUTDOWN_TIME ) ( 后 | 之后 | 以后 ) ] ( 关机 | 关闭电视 | 关闭电视机 ) ;
+$SLEEP_CMD = [ ( $SHUTDOWN_TIME ) ( 后 | 之后 | 以后 ) ] ( 待机 | 休眠 ) ;
+$REBOOT_CMD = [ ( $SHUTDOWN_TIME ) ( 后 | 之后 | 以后 ) ] ( 重启 | 重新启动 | 重启电视 ) ;
+$HOME_CMD = [ ( 回 | 回到 | 返回 | 去 ) ] ( 桌面 | 主页 | 主屏 | 首页 | 首屏 ) ;
+$DEVICE_CMD = ( $SHUTDOWN_CMD | $SLEEP_CMD | $REBOOT_CMD | $HOME_CMD ) ;
+
+$JIQI = ( 集 | 期 ) ;
+$ACTIONTYPE = ( 去 | 切到 | 切去 | 切回 | 切换到 | 跳转到 | 跳到 | 跳去 | 跳回 | 跳回到 | 看 | 去看 | 播 | 播放 ) ;
+$NEXT_EPISODE = [ $ACTIONTYPE ] ( ( 下 | 后 ) 一 ( $JIQI ) ) ;
+$PREV_EPISODE = [ $ACTIONTYPE ] ( ( 上 | 前 ) 一 ( $JIQI ) ) ;
+$EPISODE = [ $ACTIONTYPE ] ( 第 ( $DIGIT ) ( $JIQI ) ) ;
+$LASTEPISODEA = [ $ACTIONTYPE ] ( 大结局 ) ;
+$LASTEPISODEB = [ $ACTIONTYPE ] ( 最后一 ( $JIQI ) ) ;
+$LASTEPISODE = ( ( $LASTEPISODEA ) | ( $LASTEPISODEB ) ) ;
+$EPISODE_CMD = ( ( $NEXT_EPISODE ) | ( $PREV_EPISODE ) | ( $EPISODE ) | ( $LASTEPISODE ) ) ;
+
+
+(!SENT_START ( $APP_CMD | $PLAYER_CMD | $EPISODE_CMD | $DEVICE_CMD | $MUSIC_CMD | $CONTACT_CMD | $MOVIE_CMD | $LOCATION_CMD) !SENT_END)

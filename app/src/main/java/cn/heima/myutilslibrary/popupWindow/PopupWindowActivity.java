@@ -4,7 +4,6 @@ import android.content.Context;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,10 +13,14 @@ import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
-import cn.heima.myutilslibrary.R;
-import cn.krvision.toolmodule.MyUtils;
+import com.alibaba.android.arouter.facade.annotation.Route;
 
-public class PopupWindowActivity extends AppCompatActivity {
+import cn.heima.myutilslibrary.R;
+import cn.krvision.toolmodule.ARouterPath;
+import cn.krvision.toolmodule.BaseActivity;
+import cn.krvision.toolmodule.MyUtils;
+@Route(path= ARouterPath.PopupWindowActivity)
+public class PopupWindowActivity extends BaseActivity {
 
     private PopupWindow popupWindow;
     private TextView tvSort;

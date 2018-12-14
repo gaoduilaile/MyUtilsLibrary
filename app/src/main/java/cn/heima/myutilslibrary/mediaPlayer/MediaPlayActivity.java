@@ -3,19 +3,21 @@ package cn.heima.myutilslibrary.mediaPlayer;
 import android.content.Context;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.google.android.exoplayer2.ui.SimpleExoPlayerView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.heima.myutilslibrary.R;
+import cn.krvision.toolmodule.ARouterPath;
+import cn.krvision.toolmodule.BaseActivity;
 import cn.krvision.toolmodule.ExoplayerUtils;
 import cn.krvision.toolmodule.LogUtils;
 import cn.krvision.toolmodule.MediaPlayerUtils;
-
-public class MediaPlayActivity extends AppCompatActivity {
+@Route(path= ARouterPath.MediaPlayActivity)
+public class MediaPlayActivity extends BaseActivity {
 
 
     @BindView(R.id.simpleExoPlayerView)

@@ -2,14 +2,18 @@ package cn.heima.myutilslibrary.tts;
 
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
+
+import com.alibaba.android.arouter.facade.annotation.Route;
 
 import java.util.Locale;
 
 import cn.heima.myutilslibrary.R;
+import cn.krvision.toolmodule.ARouterPath;
+import cn.krvision.toolmodule.BaseActivity;
 
-public class TTSActivity extends AppCompatActivity {
+@Route(path= ARouterPath.TTSActivity)
+public class TTSActivity extends BaseActivity {
 
     private TextToSpeech tts;
 

@@ -4,11 +4,16 @@ import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+
+import com.alibaba.android.arouter.launcher.ARouter;
+
 /**
  * <p>Activity基类 </p>
+ *
  * @name BaseActivity
  */
 public abstract class BaseActivity extends AppCompatActivity {
+
 
     /**
      * 封装的findViewByID方法
@@ -23,6 +28,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         AppManager.getInstance().addActivity(this);
+        ARouter.getInstance().inject(this);
     }
 
 
@@ -56,6 +62,7 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     /**
      * 替换fragment
+     *
      * @param fragment
      * @param frameId
      */
@@ -71,6 +78,7 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     /**
      * 隐藏fragment
+     *
      * @param fragment
      */
     protected void hideFragment(BaseFragment fragment) {
@@ -84,6 +92,7 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     /**
      * 显示fragment
+     *
      * @param fragment
      */
     protected void showFragment(BaseFragment fragment) {
@@ -97,6 +106,7 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     /**
      * 移除fragment
+     *
      * @param fragment
      */
     protected void removeFragment(BaseFragment fragment) {

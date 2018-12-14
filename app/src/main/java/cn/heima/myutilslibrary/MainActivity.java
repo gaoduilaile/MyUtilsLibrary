@@ -1,18 +1,20 @@
 package cn.heima.myutilslibrary;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+
+import com.alibaba.android.arouter.facade.annotation.Route;
+import com.alibaba.android.arouter.launcher.ARouter;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import cn.heima.myutilslibrary.mediaPlayer.MediaPlayActivity;
-import cn.heima.myutilslibrary.popupWindow.PopupWindowActivity;
-import cn.krvision.blebluetooth.BluetoothActivity;
+import cn.heima.myutilslibrary.bean.WeatherBean;
+import cn.krvision.toolmodule.ARouterPath;
+import cn.krvision.toolmodule.BaseActivity;
 
-public class MainActivity extends AppCompatActivity {
+@Route(path=ARouterPath.MainActivity)
+public class MainActivity extends BaseActivity {
 
     private String TAG = " MainActivity=";
     private Context context;
@@ -22,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+
         context = this;
     }
 
@@ -29,16 +32,26 @@ public class MainActivity extends AppCompatActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.tv_bluetooth:
-                startActivity(new Intent(context, BluetoothActivity.class));
+//                startActivity(new Intent(context, BluetoothActivity.class));
+
+                //使用Arouter路由跳转界面并传递参数
+                ARouter.getInstance().build(ARouterPath.BluetoothActivity)
+                        .withString("key1","value1")
+                        .withInt("key2",2)
+                        .withSerializable("WeatherinfoBean",new WeatherBean.WeatherinfoBean("晴天"))
+                        .withTransition(R.anim.dialog_enter_anim,R.anim.dialog_exit_anim)//添加动画
+                        .navigation();
                 break;
             case R.id.tv_contact:
 //                startActivity(new Intent(context, ContactsActivity.class));
                 break;
             case R.id.tv_video:
-                startActivity(new Intent(context, MediaPlayActivity.class));
+//                startActivity(new Intent(context, MediaPlayActivity.class));
+                ARouter.getInstance().build(ARouterPath.MediaPlayActivity).navigation();
                 break;
             case R.id.tv_pop:
-                startActivity(new Intent(context, PopupWindowActivity.class));
+//                startActivity(new Intent(context, PopupWindowActivity.class));
+                ARouter.getInstance().build(ARouterPath.PopupWindowActivity).navigation();
                 break;
         }
     }

@@ -22,7 +22,14 @@ public class WeatherBean implements Serializable {
         this.weatherinfo = weatherinfo;
     }
 
-    public static class WeatherinfoBean {
+
+
+    public static class WeatherinfoBean implements Serializable{
+
+        public WeatherinfoBean(String weather) {
+            this.weather = weather;
+        }
+
         /**
          * city : 杭州
          * cityid : 101210101

@@ -3,29 +3,21 @@ package cn.krvision.toolmodule;
 /**
  * Created by danxx on 2017/11/27.
  * 路由path
- *
+ * <p>
  * Aty : Activity
  * Fgt : Fragment
- *
  */
 
 public class ARouterPath {
 
-    /**妹子列表Activity*/
-    public static final String GirlsListAty = "/girls/aty/list";
+    public static final String MediaPlayActivity = "/app/MediaPlayActivity";
 
-    /**妹子列表动态Activity*/
-    public static final String DynaGirlsListAty = "/girls/dynaty/list";
+    public static final String PopupWindowActivity = "/app/PopupWindowActivity";
 
-    /**新闻列表Activity*/
-    public static final String NewsListAty = "/news/aty/list";
+    public static final String TTSActivity = "/app/TTSActivity";
 
-    /**妹子列表Fragment*/
-    public static final String GirlsListFgt = "/girls/aty/fgt/list";
+    public static final String BluetoothActivity = "/blebluetooth.BluetoothActivity";
+    public static final String MainActivity = "/app.MainActivity";
 
-    /**新闻列表Fragment*/
-    public static final String NewsListFgt = "/news/fgt/list";
 
-    /**关于Fragment*/
-    public static final String AboutFgt = "/about/fgt/fragment";
 }
