@@ -13,7 +13,6 @@ import butterknife.OnClick;
 import cn.heima.myutilslibrary.popupWindow.PopupWindowActivity;
 import cn.krvision.toolmodule.ARouterPath;
 import cn.krvision.toolmodule.BaseActivity;
-import cn.krvision.toolmodule.bean.WeatherBean;
 
 @Route(path=ARouterPath.MainActivity)
 public class MainActivity extends BaseActivity {
@@ -40,7 +39,6 @@ public class MainActivity extends BaseActivity {
                 ARouter.getInstance().build(ARouterPath.BluetoothActivity)
                         .withString("key1","value1")
                         .withInt("key2",2)
-                        .withSerializable("WeatherinfoBean",new WeatherBean.WeatherinfoBean("晴天"))
                         .withTransition(R.anim.dialog_enter_anim,R.anim.dialog_exit_anim)//添加动画
                         .navigation();
                 break;

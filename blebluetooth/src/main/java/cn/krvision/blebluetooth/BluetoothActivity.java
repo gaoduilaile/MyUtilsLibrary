@@ -11,25 +11,22 @@ import com.alibaba.android.arouter.launcher.ARouter;
 import cn.krvision.toolmodule.ARouterPath;
 import cn.krvision.toolmodule.BaseActivity;
 import cn.krvision.toolmodule.LogUtils;
-import cn.krvision.toolmodule.bean.WeatherBean;
 
 @Route(path= ARouterPath.BluetoothActivity)
 public class BluetoothActivity extends BaseActivity {
 
-    @Autowired()
+    @Autowired
     String key1;
-    @Autowired()
+    @Autowired
     int key2;
-    @Autowired(name="WeatherinfoBean")
-    WeatherBean.WeatherinfoBean weatherinfoBean;
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bluetooth);
+        ARouter.getInstance().inject(this);
 
 //        ARouter.init(getApplication());
 
-        LogUtils.e("BluetoothActivity ","key1="+key1+" key2="+key2+" WeatherinfoBean="+weatherinfoBean);
+        LogUtils.e("BluetoothActivity ","key1="+key1+" key2="+key2);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
