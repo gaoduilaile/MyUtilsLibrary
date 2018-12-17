@@ -1,6 +1,5 @@
 <resources>
 
-    <string name="app_name">搜狗语音语义demo</string>
     <string name="title_activity_main">搜狗语音语义demo</string>
     <string name="srss">识别结果展示</string>
     <string name="insufficient_permission_hints">尚未获得所需权限，请在设置中打开权限，否则SDK无法正常使用！</string>

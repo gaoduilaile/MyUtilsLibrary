@@ -10,14 +10,14 @@ package cn.krvision.toolmodule;
 
 public class ARouterPath {
 
-    public static final String MediaPlayActivity = "/app/MediaPlayActivity";
+    public static final String MediaPlayActivity = "/app/mediaPlayActivity";
 
-    public static final String PopupWindowActivity = "/app/PopupWindowActivity";
+    public static final String PopupWindowActivity = "/app/popupWindowActivity";
 
-    public static final String TTSActivity = "/app/TTSActivity";
+    public static final String TTSActivity = "/app/ttsActivity";
 
-    public static final String BluetoothActivity = "/blebluetooth.BluetoothActivity";
-    public static final String MainActivity = "/app.MainActivity";
+    public static final String BluetoothActivity = "/blebluetooth/bluetoothActivity";
+    public static final String MainActivity = "/app/mainActivity";
 
 
 }

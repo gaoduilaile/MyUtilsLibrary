@@ -1,6 +1,7 @@
 package cn.heima.myutilslibrary;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -9,9 +10,10 @@ import com.alibaba.android.arouter.launcher.ARouter;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import cn.heima.myutilslibrary.bean.WeatherBean;
+import cn.heima.myutilslibrary.popupWindow.PopupWindowActivity;
 import cn.krvision.toolmodule.ARouterPath;
 import cn.krvision.toolmodule.BaseActivity;
+import cn.krvision.toolmodule.bean.WeatherBean;
 
 @Route(path=ARouterPath.MainActivity)
 public class MainActivity extends BaseActivity {
@@ -50,8 +52,8 @@ public class MainActivity extends BaseActivity {
                 ARouter.getInstance().build(ARouterPath.MediaPlayActivity).navigation();
                 break;
             case R.id.tv_pop:
-//                startActivity(new Intent(context, PopupWindowActivity.class));
-                ARouter.getInstance().build(ARouterPath.PopupWindowActivity).navigation();
+                startActivity(new Intent(context, PopupWindowActivity.class));
+//                ARouter.getInstance().build(ARouterPath.PopupWindowActivity).navigation();
                 break;
         }
     }

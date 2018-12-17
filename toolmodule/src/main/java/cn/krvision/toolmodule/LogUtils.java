@@ -13,7 +13,7 @@ import java.io.RandomAccessFile;
  * 作者: gaoqiong
  */
 public class LogUtils {
-    private static boolean isDebug= false;
+    private static boolean isDebug= true;
 
     //信息太长,分段打印
     public static void e(String tag, String msg) {

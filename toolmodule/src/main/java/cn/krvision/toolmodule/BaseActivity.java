@@ -5,7 +5,6 @@ import android.support.annotation.IdRes;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.alibaba.android.arouter.launcher.ARouter;
 
 /**
  * <p>Activity基类 </p>
@@ -28,7 +27,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         AppManager.getInstance().addActivity(this);
-        ARouter.getInstance().inject(this);
+//        ARouter.getInstance().inject(this);
     }
 
 

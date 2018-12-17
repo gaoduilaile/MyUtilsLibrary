@@ -72,7 +72,7 @@ public class MediaPlayActivity extends BaseActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        ExoplayerUtils.getInstance().stop();
+//        ExoplayerUtils.getInstance().stop();
         ExoplayerUtils.getInstance().release();
     }
 
