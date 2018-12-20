@@ -171,8 +171,15 @@ public class ContactsManager extends ContentObserver {
         contactsFetchTask.execute();
     }
 
+
+    /**
+     * Void
+     * 第二个参数对应  onProgressUpdate
+     * 第三个参数对应  onPostExecute  doInBackground
+     */
     private class ContactsFetchTask extends AsyncTask<Void, List<LinphoneContact>, List<LinphoneContact>> {
         @SuppressWarnings("unchecked")
+        //相当于Thread中的run方法
         protected List<LinphoneContact> doInBackground(Void... params) {
             List<LinphoneContact> contacts = new ArrayList<LinphoneContact>();
 
@@ -196,21 +203,37 @@ public class ContactsManager extends ContentObserver {
             Collections.sort(contacts);
 
             // Public the current list of contacts without all the informations populated
-            publishProgress(contacts);
+            publishProgress();
 
             return contacts;
         }
 
+        //正在进行异步操作
+        @Override
         protected void onProgressUpdate(List<LinphoneContact>... result) {
+            super.onProgressUpdate(result);
 //            customProgressDialog.show();
+            if (result[0] != null && result[0].size()  > 0) {
+//                contacts = result;
+//                listener.onContactsUpdated();
+            }
+
         }
 
+        //进行异步操作完成
+        @Override
         protected void onPostExecute(List<LinphoneContact> result) {
 //            customProgressDialog.dismiss();
             if (result != null && result.size() > 0) {
                 contacts = result;
                 listener.onContactsUpdated();
             }
+        }
+
+        //异步操作失败
+        @Override
+        protected void onCancelled() {
+            super.onCancelled();
         }
     }
 
