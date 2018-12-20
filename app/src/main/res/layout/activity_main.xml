@@ -23,7 +23,7 @@
     <TextView
         android:id="@+id/tv_contact"
         style="@style/main_text_view_style"
-        android:text="通讯率" />
+        android:text="通讯录" />
 
     <TextView
         android:layout_width="match_parent"

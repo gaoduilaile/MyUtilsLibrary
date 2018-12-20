@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="cn.heima.myutilslibrary">
+          xmlns:tools="http://schemas.android.com/tools"
+          package="cn.heima.myutilslibrary">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+
+
 
     <application
         android:name=".MainApplication"
@@ -19,12 +24,12 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".contacts.ContactsActivity"></activity>
+        <activity android:name=".contacts.ContactsActivity"/>
 
         <!-- 微信客户端回调 -->
         <activity
@@ -35,21 +40,21 @@
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar">
             <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.VIEW"/>
 
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT"/>
 
-                <data android:scheme="wxc5cffcd929280839" />
+                <data android:scheme="wxc5cffcd929280839"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".wxapi.WXPayEntryActivity"
             android:exported="true"
-            android:launchMode="singleTop" />
+            android:launchMode="singleTop"/>
 
         <receiver android:name=".pay.AppRegister">
             <intent-filter>
-                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP"/>
             </intent-filter>
         </receiver>
         <!-- ============================= -->
@@ -61,20 +66,22 @@
             android:configChanges="orientation|keyboardHidden|navigation|screenSize"
             android:exported="false"
             android:screenOrientation="behind"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
         <activity
             android:name="com.alipay.sdk.app.H5AuthActivity"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:exported="false"
             android:screenOrientation="behind"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
         <!-- ===== -->
 
-        <activity android:name=".mediaPlayer.MediaPlayActivity" />
-        <activity android:name=".proxy.ProxyActivity" />
-        <activity android:name=".tts.TTSActivity" />
-        <activity android:name=".popupWindow.PopupWindowActivity" />
-        <activity android:name=".mediaPlayer.MediaPlayer2Activity"></activity>
+        <activity android:name=".mediaPlayer.MediaPlayActivity"/>
+        <activity android:name=".proxy.ProxyActivity"/>
+        <activity android:name=".tts.TTSActivity"/>
+        <activity android:name=".popupWindow.PopupWindowActivity"/>
+        <activity android:name=".mediaPlayer.MediaPlayer2Activity"/>
+        <activity android:name=".contacts.Contacts2Activity">
+        </activity>
     </application>
 
 </manifest>

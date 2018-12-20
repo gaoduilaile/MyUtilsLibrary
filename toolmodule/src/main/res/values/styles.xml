@@ -29,4 +29,13 @@
         <item name="android:backgroundDimEnabled">true</item>
         <item name="android:windowBackground">@color/color_00000000</item>
     </style>
+
+    <style name="customDialog" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">#3f51b5</item>
+    </style>
+
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
 </resources>

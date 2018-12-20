@@ -10,6 +10,7 @@ import com.alibaba.android.arouter.launcher.ARouter;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import cn.heima.myutilslibrary.contacts.Contacts2Activity;
 import cn.heima.myutilslibrary.popupWindow.PopupWindowActivity;
 import cn.krvision.toolmodule.ARouterPath;
 import cn.krvision.toolmodule.BaseActivity;
@@ -43,7 +44,7 @@ public class MainActivity extends BaseActivity {
                         .navigation();
                 break;
             case R.id.tv_contact:
-//                startActivity(new Intent(context, ContactsActivity.class));
+                startActivity(new Intent(context, Contacts2Activity.class));
                 break;
             case R.id.tv_video:
 //                startActivity(new Intent(context, MediaPlayActivity.class));
