@@ -52,6 +52,7 @@ public class ContactsManager extends ContentObserver {
     private ContactsFetchTask contactsFetchTask;
 
     private ContactsUpdatedListener listener;
+//    private CustomProgressDialog customProgressDialog;
 
     interface ContactsUpdatedListener {
         void onContactsUpdated();
@@ -68,10 +69,12 @@ public class ContactsManager extends ContentObserver {
     private ContactsManager(Handler handler) {
         super(handler);
         contacts = new ArrayList<LinphoneContact>();
+
     }
 
     public void setContactsUpdatedListener(ContactsUpdatedListener listener) {
         this.listener = listener;
+
     }
 
     public void destroy() {
@@ -154,6 +157,8 @@ public class ContactsManager extends ContentObserver {
         }
         initializeContactManager(context, contentResolver);
 
+//        customProgressDialog = new CustomProgressDialog(context, "加载中...", false);
+
         fetchContactsAsync();
     }
 
@@ -193,20 +198,15 @@ public class ContactsManager extends ContentObserver {
             // Public the current list of contacts without all the informations populated
             publishProgress(contacts);
 
-
-
             return contacts;
         }
 
-
         protected void onProgressUpdate(List<LinphoneContact>... result) {
-            if (result[0] != null && result[0].size() > 0) {
-                contacts = result[0];
-                listener.onContactsUpdated();
-            }
+//            customProgressDialog.show();
         }
 
         protected void onPostExecute(List<LinphoneContact> result) {
+//            customProgressDialog.dismiss();
             if (result != null && result.size() > 0) {
                 contacts = result;
                 listener.onContactsUpdated();
