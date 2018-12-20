@@ -10,9 +10,9 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/blebluetooth" />
-            <option value="$PROJECT_DIR$/contact" />
             <option value="$PROJECT_DIR$/mvvmlibrary" />
             <option value="$PROJECT_DIR$/toolmodule" />
+            <option value="$PROJECT_DIR$/voip" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
