@@ -109,5 +109,8 @@ dependencies {
 //    implementation(name: 'sogouspeechauth-release_v1.0.0', ext: 'aar')
 //    implementation(name: 'libsemanticsspeechapi-release-v1.4.3', ext: 'aar')
 
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation files('libs/jxl.jar')
+
 
 }
