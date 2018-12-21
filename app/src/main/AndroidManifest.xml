@@ -12,8 +12,6 @@
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
     <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
 
-
-
     <application
         android:name=".MainApplication"
         android:allowBackup="true"
@@ -81,6 +79,8 @@
         <activity android:name=".popupWindow.PopupWindowActivity"/>
         <activity android:name=".mediaPlayer.MediaPlayer2Activity"/>
         <activity android:name=".contacts.Contacts2Activity">
+        </activity>
+        <activity android:name=".glide.GlideActivity">
         </activity>
     </application>
 

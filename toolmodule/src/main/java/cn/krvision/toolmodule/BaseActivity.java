@@ -1,5 +1,6 @@
 package cn.krvision.toolmodule;
 
+import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
@@ -15,7 +16,7 @@ import android.view.inputmethod.InputMethodManager;
  */
 public abstract class BaseActivity extends AppCompatActivity {
 
-
+public Activity mContext;
     /**
      * 封装的findViewByID方法
      */
@@ -30,6 +31,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         AppManager.getInstance().addActivity(this);
 //        ARouter.getInstance().inject(this);
+        mContext=this;
     }
 
 

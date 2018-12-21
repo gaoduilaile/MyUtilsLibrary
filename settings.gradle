@@ -1,1 +1,1 @@
-include ':app',  ':blebluetooth', ':mvvmlibrary', ':voip', ":toolmodule"
+include ':app',  ':blebluetooth', ':mvvmlibrary', ':voip', ':baseutillib', ':BaseUtilLib', ':BaseUtilLib', ':BaseReslLib', ":toolmodule"
