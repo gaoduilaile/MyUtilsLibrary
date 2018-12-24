@@ -1,4 +1,4 @@
-package cn.heima.myutilslibrary.api;
+package cn.krvision.toolmodule.api;
 
 import android.content.Context;
 
@@ -10,7 +10,6 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
-import cn.heima.myutilslibrary.MainApplication;
 import cn.krvision.toolmodule.LogUtils;
 import cn.krvision.toolmodule.MyUtils;
 import okhttp3.MediaType;
@@ -90,10 +89,10 @@ public class RetrofitClient {
     }
 
 
-    public static RequestBody getRequestBodyFromMap(Map<String, Object> map) {
-        String version = MyUtils.getAppVersionName(MainApplication.mContext);
+    public static RequestBody getRequestBodyFromMap(Map<String, Object> map, Context mContext) {
+        String version = MyUtils.getAppVersionName(mContext);
         int timestamp = MyUtils.getTimetemp();
-        String md5 = RetrofitClient.md5( version + String.valueOf(timestamp) + "Android");
+        String md5 = RetrofitClient.md5(version + String.valueOf(timestamp) + "Android");
         map.put("access_token", md5);
         map.put("timestamp", timestamp);
         map.put("version", version);

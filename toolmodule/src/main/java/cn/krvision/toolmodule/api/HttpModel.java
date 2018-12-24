@@ -1,17 +1,18 @@
-package cn.heima.myutilslibrary.api;
+package cn.krvision.toolmodule.api;
 
 import android.app.Activity;
+import android.content.Context;
 
 import com.google.gson.Gson;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-import cn.heima.myutilslibrary.bean.BaseBean;
-import cn.heima.myutilslibrary.bean.ConmentStandardBean;
-import cn.heima.myutilslibrary.bean.WeatherBean;
 import cn.krvision.toolmodule.LogUtils;
 import cn.krvision.toolmodule.MyUtils;
+import cn.krvision.toolmodule.bean.BaseBean;
+import cn.krvision.toolmodule.bean.ConmentStandardBean;
+import cn.krvision.toolmodule.bean.WeatherBean;
 import okhttp3.OkHttpClient;
 import okhttp3.ResponseBody;
 import retrofit2.Retrofit;
@@ -33,8 +34,8 @@ public class HttpModel {
         void downloadFailure(String message);
     }
 
-    public void downloadfirstclassmenu() {
-        ModelUtils.downloadfirstclassmenu(new Observer<ResponseBody>() {
+    public void downloadfirstclassmenu(Context context) {
+        ModelUtils.downloadfirstclassmenu(context,new Observer<ResponseBody>() {
             @Override
             public void onCompleted() {
 
@@ -52,8 +53,8 @@ public class HttpModel {
         });
     }
 
-    public void uploadclassbutton(String last_class_name) {
-        ModelUtils.uploadclassbutton(last_class_name, new Observer<ResponseBody>() {
+    public void uploadclassbutton(Context context,String last_class_name) {
+        ModelUtils.uploadclassbutton(context,last_class_name, new Observer<ResponseBody>() {
             @Override
             public void onCompleted() {
 

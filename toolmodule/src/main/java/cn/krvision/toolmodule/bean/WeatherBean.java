@@ -113,20 +113,5 @@ public class WeatherBean implements Serializable {
         public void setPtime(String ptime) {
             this.ptime = ptime;
         }
-
-
-        @Override
-        public String toString() {
-            return "WeatherinfoBean{" +
-                    "city='" + city + '\'' +
-                    ", cityid='" + cityid + '\'' +
-                    ", temp1='" + temp1 + '\'' +
-                    ", temp2='" + temp2 + '\'' +
-                    ", weather='" + weather + '\'' +
-                    ", img1='" + img1 + '\'' +
-                    ", img2='" + img2 + '\'' +
-                    ", ptime='" + ptime + '\'' +
-                    '}';
-        }
     }
 }

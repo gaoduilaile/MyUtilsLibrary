@@ -16,8 +16,8 @@ import android.widget.TextView;
 import java.util.List;
 
 import cn.heima.myutilslibrary.R;
-import cn.heima.myutilslibrary.bean.ConmentStandardBean;
 import cn.krvision.toolmodule.GlideUtils;
+import cn.krvision.toolmodule.bean.ConmentStandardBean;
 
 
 /**

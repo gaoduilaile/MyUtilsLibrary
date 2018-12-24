@@ -1,8 +1,15 @@
-apply plugin: 'com.android.library'
+if (isPlugin.toBoolean()) {
+    apply plugin: 'com.android.application'
+} else {
+    apply plugin: 'com.android.library'
+}
 
 android {
     compileSdkVersion 26
     defaultConfig {
+        if (isPlugin.toBoolean()){
+            applicationId 'cn.krvision.blebluetooth'
+        }
         minSdkVersion 18
         targetSdkVersion 26
         versionCode 1

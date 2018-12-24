@@ -1,4 +1,4 @@
-package cn.heima.myutilslibrary.bean;
+package cn.krvision.toolmodule.bean;
 
 
 import java.io.Serializable;
