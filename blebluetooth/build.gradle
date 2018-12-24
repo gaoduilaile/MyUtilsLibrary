@@ -7,7 +7,7 @@ if (isPlugin.toBoolean()) {
 android {
     compileSdkVersion 26
     defaultConfig {
-        if (isPlugin.toBoolean()){
+        if (isPlugin.toBoolean()) {
             applicationId 'cn.krvision.blebluetooth'
         }
         minSdkVersion 18
@@ -32,6 +32,15 @@ android {
         }
     }
 
+    sourceSets {
+        main {
+            if (isPlugin.toBoolean()) {
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+            } else {
+                manifest.srcFile 'src/main/release/AndroidManifest.xml'
+            }
+        }
+    }
 }
 
 dependencies {
@@ -40,6 +49,7 @@ dependencies {
     implementation 'com.android.support:recyclerview-v7:26.1.0'
     implementation project(':toolmodule')
     implementation 'com.alibaba:arouter-api:1.3.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     annotationProcessor 'com.alibaba:arouter-compiler:1.1.4'
 
 }
