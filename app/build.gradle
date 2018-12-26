@@ -51,6 +51,13 @@ android {
         }
     }
 
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
     flavorDimensions "default"
     productFlavors {
         umeng {
@@ -79,7 +86,7 @@ def releaseTime() {
 
 dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
-    compile fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation rootProject.ext.dependencies.supportv7
     implementation rootProject.ext.dependencies.supportv4
     implementation rootProject.ext.dependencies.design26
@@ -87,6 +94,7 @@ dependencies {
     implementation rootProject.ext.dependencies.exoplayer
     implementation project(':blebluetooth')
     implementation project(':toolmodule')
+//    implementation project(':speechDemo')
     implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
     implementation files('libs/mediaservice-4.2.2.jar')
     implementation files('libs/alipaySdk-20180316.jar')
@@ -103,6 +111,9 @@ dependencies {
 
     implementation 'org.greenrobot:eventbus:3.0.0'
     implementation files('libs/jxl.jar')
+
+    implementation files('libs/Msc.jar')
+    implementation files('libs/Sunflower.jar')
 
 
 }

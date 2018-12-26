@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/BaseReslLib/BaseReslLib.iml" filepath="$PROJECT_DIR$/BaseReslLib/BaseReslLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BaseUtilLib/BaseUtilLib.iml" filepath="$PROJECT_DIR$/BaseUtilLib/BaseUtilLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyUtilsLibrary.iml" filepath="$PROJECT_DIR$/MyUtilsLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/blebluetooth/blebluetooth.iml" filepath="$PROJECT_DIR$/blebluetooth/blebluetooth.iml" />
       <module fileurl="file://$PROJECT_DIR$/mvvmlibrary/mvvmlibrary.iml" filepath="$PROJECT_DIR$/mvvmlibrary/mvvmlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/speechDemo/speechDemo.iml" filepath="$PROJECT_DIR$/speechDemo/speechDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/toolmodule/toolmodule.iml" filepath="$PROJECT_DIR$/toolmodule/toolmodule.iml" />
       <module fileurl="file://$PROJECT_DIR$/voip/voip.iml" filepath="$PROJECT_DIR$/voip/voip.iml" />
     </modules>

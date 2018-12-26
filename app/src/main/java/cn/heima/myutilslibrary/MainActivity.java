@@ -12,6 +12,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import cn.heima.myutilslibrary.contacts.Contacts2Activity;
 import cn.heima.myutilslibrary.popupWindow.PopupWindowActivity;
+import cn.heima.myutilslibrary.tts.IatDemo;
 import cn.krvision.toolmodule.ARouterPath;
 import cn.krvision.toolmodule.BaseActivity;
 
@@ -30,7 +31,7 @@ public class MainActivity extends BaseActivity {
         context = this;
     }
 
-    @OnClick({R.id.tv_bluetooth, R.id.tv_contact,R.id.tv_video, R.id.tv_pop})
+    @OnClick({R.id.tv_bluetooth, R.id.tv_contact,R.id.tv_video, R.id.tv_pop,R.id.tv_tts})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.tv_bluetooth:
@@ -53,6 +54,10 @@ public class MainActivity extends BaseActivity {
             case R.id.tv_pop:
                 startActivity(new Intent(context, PopupWindowActivity.class));
 //                ARouter.getInstance().build(ARouterPath.PopupWindowActivity).navigation();
+                break;
+            case R.id.tv_tts:
+                startActivity(new Intent(context, IatDemo.class));
+//                ARouter.getInstance().build(ARouterPath.MainActivitySpeech).navigation();
                 break;
         }
     }

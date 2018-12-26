@@ -18,6 +18,7 @@ public class ARouterPath {
 
     public static final String BluetoothActivity = "/blebluetooth/bluetoothActivity";
     public static final String MainActivity = "/app/mainActivity";
+    public static final String MainActivitySpeech = "/speech/SpeechDemoMainActivity";
 
 
 }

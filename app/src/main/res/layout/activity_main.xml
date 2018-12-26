@@ -49,4 +49,9 @@
         style="@style/main_text_view_style"
         android:text="pop弹窗测试" />
 
+    <TextView
+        android:id="@+id/tv_tts"
+        style="@style/main_text_view_style"
+        android:text="讯飞语音" />
+
 </LinearLayout>

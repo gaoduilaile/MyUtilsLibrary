@@ -8,9 +8,12 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/BaseReslLib" />
+            <option value="$PROJECT_DIR$/BaseUtilLib" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/blebluetooth" />
             <option value="$PROJECT_DIR$/mvvmlibrary" />
+            <option value="$PROJECT_DIR$/speechDemo" />
             <option value="$PROJECT_DIR$/toolmodule" />
             <option value="$PROJECT_DIR$/voip" />
           </set>

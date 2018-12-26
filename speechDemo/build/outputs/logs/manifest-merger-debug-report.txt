@@ -1,0 +1,235 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:2:1-111:12
+INJECTED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:2:1-111:12
+INJECTED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:2:1-111:12
+INJECTED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:2:1-111:12
+INJECTED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:2:1-111:12
+INJECTED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:2:1-111:12
+INJECTED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:2:1-111:12
+	package
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:4:11-42
+		INJECTED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml
+		INJECTED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:2:1-111:12
+		INJECTED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml
+	xmlns:tools
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:3:11-57
+	android:versionCode
+		INJECTED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:2:1-111:12
+		INJECTED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:2:11-69
+application
+ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:6:5-94:19
+	android:label
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:9:9-31
+	android:icon
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:7:9-38
+	android:name
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:8:9-33
+activity#com.iflytek.voicedemo.SpeechDemoMainActivity
+ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:10:9-21:20
+	android:screenOrientation
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:15:13-49
+	android:label
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:14:13-35
+	android:configChanges
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:12:13-133
+	android:icon
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:13:13-42
+	android:name
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:11:13-72
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:16:13-20:29
+action#android.intent.action.MAIN
+ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:17:17-69
+	android:name
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:17:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:19:17-77
+	android:name
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:19:27-74
+activity#com.iflytek.speech.setting.TtsSettings
+ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:22:9-23:20
+	android:name
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:22:19-72
+activity#com.iflytek.speech.setting.IatSettings
+ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:24:9-25:20
+	android:name
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:24:19-72
+activity#com.iflytek.voicedemo.IatDemo
+ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:26:9-30:20
+	android:screenOrientation
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:29:13-49
+	android:configChanges
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:28:13-133
+	android:name
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:27:13-57
+activity#com.iflytek.voicedemo.AsrDemo
+ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:31:9-35:20
+	android:screenOrientation
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:34:13-49
+	android:configChanges
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:33:13-133
+	android:name
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:32:13-57
+activity#com.iflytek.voicedemo.TtsDemo
+ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:36:9-40:20
+	android:screenOrientation
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:39:13-49
+	android:configChanges
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:38:13-133
+	android:name
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:37:13-57
+activity#com.iflytek.voicedemo.IseDemo
+ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:41:9-45:20
+	android:screenOrientation
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:44:13-49
+	android:configChanges
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:43:13-133
+	android:name
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:42:13-57
+activity#com.iflytek.voicedemo.vocalverify.VocalVerifyDemo
+ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:46:9-50:20
+	android:screenOrientation
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:49:13-49
+	android:configChanges
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:48:13-133
+	android:name
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:47:13-77
+activity#com.iflytek.voicedemo.faceonline.OnlineFaceDemo
+ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:51:9-55:20
+	android:screenOrientation
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:54:13-49
+	android:configChanges
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:53:13-133
+	android:name
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:52:13-75
+activity#com.iflytek.voicedemo.IdentifyGroup.GroupManagerActivity
+ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:56:9-60:20
+	android:screenOrientation
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:59:13-49
+	android:configChanges
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:58:13-133
+	android:name
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:57:13-84
+activity#com.iflytek.voicedemo.IdentifyGroup.FaceIdentifyActivity
+ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:61:9-65:20
+	android:screenOrientation
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:64:13-49
+	android:configChanges
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:63:13-133
+	android:name
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:62:13-84
+activity#com.iflytek.voicedemo.IdentifyGroup.VocalIdentifyActivity
+ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:66:9-70:20
+	android:screenOrientation
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:69:13-49
+	android:configChanges
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:68:13-133
+	android:name
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:67:13-85
+activity#com.iflytek.voicedemo.IdentifyGroup.ResultIdentifyActivity
+ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:71:9-75:20
+	android:screenOrientation
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:74:13-49
+	android:configChanges
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:73:13-133
+	android:name
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:72:13-86
+activity#com.iflytek.speech.setting.IseSettings
+ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:76:9-80:20
+	android:screenOrientation
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:79:13-49
+	android:configChanges
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:78:13-133
+	android:name
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:77:13-66
+activity#com.iflytek.speech.setting.UrlSettings
+ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:81:9-85:20
+	android:screenOrientation
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:84:13-49
+	android:configChanges
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:83:13-133
+	android:name
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:82:13-66
+meta-data#IFLYTEK_APPKEY
+ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:87:9-89:42
+	android:value
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:89:13-29
+	android:name
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:88:13-42
+meta-data#IFLYTEK_CHANNEL
+ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:90:9-92:44
+	android:value
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:92:13-41
+	android:name
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:91:13-43
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:96:5-71
+	android:name
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:96:22-68
+uses-permission#android.permission.INTERNET
+ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:97:5-67
+	android:name
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:97:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:98:5-79
+	android:name
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:98:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:99:5-76
+	android:name
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:99:22-73
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:100:5-79
+	android:name
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:100:22-76
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:101:5-75
+	android:name
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:101:22-72
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:102:5-79
+	android:name
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:102:22-76
+uses-permission#android.permission.READ_CONTACTS
+ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:103:5-72
+	android:name
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:103:22-69
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:104:5-81
+	android:name
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:104:22-78
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:105:5-106:59
+	tools:ignore
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:106:22-57
+	android:name
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:105:22-70
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:107:5-80
+	android:name
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:107:22-77
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:109:5-81
+	android:name
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml:109:22-78
+uses-sdk
+INJECTED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml
+INJECTED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml
+INJECTED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml
+INJECTED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml
+		INJECTED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml
+		ADDED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml
+		INJECTED from E:\android\walkSpace\MyUtilsLibrary\speechDemo\src\main\release\AndroidManifest.xml

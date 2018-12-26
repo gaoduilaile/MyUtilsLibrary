@@ -3,6 +3,7 @@ package cn.heima.myutilslibrary;
 import android.app.Application;
 import android.content.Context;
 
+import com.alibaba.android.arouter.BuildConfig;
 import com.alibaba.android.arouter.launcher.ARouter;
 
 public class MainApplication extends Application {
@@ -22,7 +23,6 @@ public class MainApplication extends Application {
             ARouter.printStackTrace();
         }
         ARouter.init(this);
-
     }
 
     @Override
