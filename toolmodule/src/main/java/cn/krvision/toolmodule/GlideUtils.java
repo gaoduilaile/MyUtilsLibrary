@@ -24,7 +24,7 @@ public class GlideUtils {
     }
 
 
-    public void loadImage(final Context mContext, int resourceId, String imageUrl, final ImageView imageView){
+    public void loadImage2(final Context mContext, int resourceId, String imageUrl, final ImageView imageView){
         Glide.with(mContext)
                 .load(imageUrl)
                 .asBitmap()  //这句不能少，否则下面的方法会报错
@@ -40,5 +40,15 @@ public class GlideUtils {
                         imageView.setImageDrawable(circularBitmapDrawable);
                     }
                 });
+    }
+
+    public void loadImage(final Context mContext, int resourceId, String imageUrl, final ImageView imageView){
+        Glide.with(mContext)
+                .load(imageUrl)
+                .asBitmap()  //这句不能少，否则下面的方法会报错
+                .centerCrop()
+                .placeholder(resourceId) //预加载暂未图片
+                .error(resourceId) //加载失败图片
+                .into(imageView);
     }
 }
