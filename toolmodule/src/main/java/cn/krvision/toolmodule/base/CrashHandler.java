@@ -1,5 +1,8 @@
-package cn.krvision.toolmodule;
+package cn.krvision.toolmodule.base;
 
+
+import cn.krvision.toolmodule.utils.LogUtils;
+import cn.krvision.toolmodule.utils.MyUtils;
 
 public class CrashHandler implements Thread.UncaughtExceptionHandler {
 

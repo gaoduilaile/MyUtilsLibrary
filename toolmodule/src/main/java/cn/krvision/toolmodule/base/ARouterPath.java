@@ -1,4 +1,4 @@
-package cn.krvision.toolmodule;
+package cn.krvision.toolmodule.base;
 
 /**
  * Created by danxx on 2017/11/27.

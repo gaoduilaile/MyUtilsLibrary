@@ -6,7 +6,7 @@ import android.widget.GridView;
 
 /**
  * Created by gaoqiong on 2019/1/3 16:01
- * Description:$value$
+ *  * 描述: 嵌入ScrollView中的GridView
  */
 public class MyGridView extends GridView {
     public MyGridView(Context context, AttributeSet attrs) {

@@ -1,4 +1,4 @@
-package cn.krvision.toolmodule;
+package cn.krvision.toolmodule.utils;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;

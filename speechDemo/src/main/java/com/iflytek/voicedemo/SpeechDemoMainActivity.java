@@ -28,7 +28,7 @@ import com.iflytek.sunflower.FlowerCollector;
 import com.iflytek.voicedemo.faceonline.OnlineFaceDemo;
 import com.iflytek.voicedemo.vocalverify.VocalVerifyDemo;
 
-import cn.krvision.toolmodule.ARouterPath;
+import cn.krvision.toolmodule.base.ARouterPath;
 
 import static com.iflytek.speech.setting.UrlSettings.PREFER_NAME;
 @Route(path= ARouterPath.MainActivitySpeech)

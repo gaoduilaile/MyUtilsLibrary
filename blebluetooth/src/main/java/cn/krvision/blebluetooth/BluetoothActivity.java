@@ -8,9 +8,9 @@ import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
 
-import cn.krvision.toolmodule.ARouterPath;
-import cn.krvision.toolmodule.BaseActivity;
-import cn.krvision.toolmodule.LogUtils;
+import cn.krvision.toolmodule.base.ARouterPath;
+import cn.krvision.toolmodule.base.BaseActivity;
+import cn.krvision.toolmodule.utils.LogUtils;
 
 @Route(path= ARouterPath.BluetoothActivity)
 public class BluetoothActivity extends BaseActivity {

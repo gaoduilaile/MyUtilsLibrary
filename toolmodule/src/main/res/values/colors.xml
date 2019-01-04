@@ -26,5 +26,5 @@
     <color name="black">#000000</color>
     <color name="color_EAEAEA">#EAEAEA</color>
     <color name="color_161920">#161920</color>
-
+    <color name="transparent">#00000000</color>
 </resources>

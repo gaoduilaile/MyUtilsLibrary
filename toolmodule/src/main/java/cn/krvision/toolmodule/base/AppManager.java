@@ -1,5 +1,5 @@
 
-package cn.krvision.toolmodule;
+package cn.krvision.toolmodule.base;
 
 import android.app.Activity;
 import android.app.ActivityManager;

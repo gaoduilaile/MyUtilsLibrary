@@ -12,7 +12,7 @@ import com.tencent.mm.opensdk.openapi.IWXAPI;
 import com.tencent.mm.opensdk.openapi.IWXAPIEventHandler;
 import com.tencent.mm.opensdk.openapi.WXAPIFactory;
 import cn.heima.myutilslibrary.pay.Constant;
-import cn.krvision.toolmodule.LogUtils;
+import cn.krvision.toolmodule.utils.LogUtils;
 
 
 public class WXPayEntryActivity extends AppCompatActivity implements IWXAPIEventHandler{

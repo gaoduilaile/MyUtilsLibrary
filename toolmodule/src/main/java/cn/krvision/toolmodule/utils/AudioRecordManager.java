@@ -1,4 +1,4 @@
-package cn.krvision.toolmodule;
+package cn.krvision.toolmodule.utils;
 
 import android.media.AudioFormat;
 import android.media.AudioManager;

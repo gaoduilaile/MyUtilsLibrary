@@ -8,8 +8,8 @@ import com.google.gson.Gson;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-import cn.krvision.toolmodule.LogUtils;
-import cn.krvision.toolmodule.MyUtils;
+import cn.krvision.toolmodule.utils.LogUtils;
+import cn.krvision.toolmodule.utils.MyUtils;
 import cn.krvision.toolmodule.bean.BaseBean;
 import cn.krvision.toolmodule.bean.ConmentStandardBean;
 import cn.krvision.toolmodule.bean.WeatherBean;

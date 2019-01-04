@@ -10,8 +10,8 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
-import cn.krvision.toolmodule.LogUtils;
-import cn.krvision.toolmodule.MyUtils;
+import cn.krvision.toolmodule.utils.LogUtils;
+import cn.krvision.toolmodule.utils.MyUtils;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.RequestBody;

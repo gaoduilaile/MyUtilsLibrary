@@ -2,7 +2,7 @@ package cn.krvision.toolmodule.api;
 
 import java.io.IOException;
 
-import cn.krvision.toolmodule.LogUtils;
+import cn.krvision.toolmodule.utils.LogUtils;
 import okhttp3.HttpUrl;
 import okhttp3.Interceptor;
 import okhttp3.Request;

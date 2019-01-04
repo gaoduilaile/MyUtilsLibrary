@@ -1,0 +1,25 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 设置透明背景色 -->
+    <solid android:color="@android:color/white" />
+    <!--调节边角-->
+    <corners
+        android:topLeftRadius="5dp"
+        android:topRightRadius="5dp"
+        android:bottomLeftRadius="5dp"
+        android:bottomRightRadius="5dp">
+    </corners>
+
+    <stroke
+        android:width="1dp"
+        android:color="@color/color_C4C4C4">
+    </stroke>
+
+    <!-- 设置一下边距,让空间大一点 -->
+    <!--<padding-->
+        <!--android:bottom="5dp"-->
+        <!--android:left="5dp"-->
+        <!--android:right="5dp"-->
+        <!--android:top="5dp" />-->
+
+</shape>

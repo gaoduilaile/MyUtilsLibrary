@@ -1,8 +1,10 @@
-package cn.krvision.toolmodule;
+package cn.krvision.toolmodule.base;
 
 import android.content.Context;
 import android.support.annotation.IdRes;
 import android.support.v4.app.Fragment;
+
+import cn.krvision.toolmodule.utils.MyUtils;
 
 public abstract class BaseFragment extends Fragment {
 

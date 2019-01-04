@@ -1,4 +1,4 @@
-package cn.krvision.toolmodule;
+package cn.krvision.toolmodule.utils;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -11,7 +11,7 @@ import com.bumptech.glide.request.target.BitmapImageViewTarget;
 
 /**
  * Created by gaoqiong on 2018/12/11 10:48
- * Description:$description$
+ * Description:Glide加载图片
  */
 public class GlideUtils {
     public static GlideUtils getInstance() {
@@ -24,7 +24,14 @@ public class GlideUtils {
     }
 
 
-    public void loadImage2(final Context mContext, int resourceId, String imageUrl, final ImageView imageView){
+    /**
+     * Glide加载圆形头像
+     * @param mContext
+     * @param resourceId
+     * @param imageUrl
+     * @param imageView
+     */
+    public void loadImageCircle(final Context mContext, int resourceId, String imageUrl, final ImageView imageView){
         Glide.with(mContext)
                 .load(imageUrl)
                 .asBitmap()  //这句不能少，否则下面的方法会报错
@@ -42,6 +49,13 @@ public class GlideUtils {
                 });
     }
 
+    /**
+     * Glide加载图片
+     * @param mContext
+     * @param resourceId
+     * @param imageUrl
+     * @param imageView
+     */
     public void loadImage(final Context mContext, int resourceId, String imageUrl, final ImageView imageView){
         Glide.with(mContext)
                 .load(imageUrl)

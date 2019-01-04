@@ -9,7 +9,7 @@ import java.util.List;
 
 import cn.heima.myutilslibrary.R;
 import cn.heima.myutilslibrary.adapter.ContactAdapter;
-import cn.krvision.toolmodule.LogUtils;
+import cn.krvision.toolmodule.utils.LogUtils;
 
 public class Contacts2Activity extends AppCompatActivity {
 

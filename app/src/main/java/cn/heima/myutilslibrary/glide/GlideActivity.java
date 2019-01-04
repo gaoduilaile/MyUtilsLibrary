@@ -10,7 +10,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.BitmapImageViewTarget;
 
 import cn.heima.myutilslibrary.R;
-import cn.krvision.toolmodule.BaseActivity;
+import cn.krvision.toolmodule.base.BaseActivity;
 
 public class GlideActivity extends BaseActivity {
 

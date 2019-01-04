@@ -13,8 +13,8 @@ import butterknife.OnClick;
 import cn.heima.myutilslibrary.contacts.Contacts2Activity;
 import cn.heima.myutilslibrary.popupWindow.PopupWindowActivity;
 import cn.heima.myutilslibrary.tts.IatDemo;
-import cn.krvision.toolmodule.ARouterPath;
-import cn.krvision.toolmodule.BaseActivity;
+import cn.krvision.toolmodule.base.ARouterPath;
+import cn.krvision.toolmodule.base.BaseActivity;
 
 @Route(path=ARouterPath.MainActivity)
 public class MainActivity extends BaseActivity {

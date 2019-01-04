@@ -11,11 +11,11 @@ import com.google.android.exoplayer2.ui.SimpleExoPlayerView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.heima.myutilslibrary.R;
-import cn.krvision.toolmodule.ARouterPath;
-import cn.krvision.toolmodule.BaseActivity;
-import cn.krvision.toolmodule.ExoplayerUtils;
-import cn.krvision.toolmodule.LogUtils;
-import cn.krvision.toolmodule.MediaPlayerUtils;
+import cn.krvision.toolmodule.base.ARouterPath;
+import cn.krvision.toolmodule.base.BaseActivity;
+import cn.krvision.toolmodule.utils.ExoplayerUtils;
+import cn.krvision.toolmodule.utils.LogUtils;
+import cn.krvision.toolmodule.utils.MediaPlayerUtils;
 @Route(path= ARouterPath.MediaPlayActivity)
 public class MediaPlayActivity extends BaseActivity {
 

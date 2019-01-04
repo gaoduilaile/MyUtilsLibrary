@@ -16,9 +16,9 @@ import android.widget.TextView;
 import com.alibaba.android.arouter.facade.annotation.Route;
 
 import cn.heima.myutilslibrary.R;
-import cn.krvision.toolmodule.ARouterPath;
-import cn.krvision.toolmodule.BaseActivity;
-import cn.krvision.toolmodule.MyUtils;
+import cn.krvision.toolmodule.base.ARouterPath;
+import cn.krvision.toolmodule.base.BaseActivity;
+import cn.krvision.toolmodule.utils.MyUtils;
 @Route(path= ARouterPath.PopupWindowActivity)
 public class PopupWindowActivity extends BaseActivity {
 
