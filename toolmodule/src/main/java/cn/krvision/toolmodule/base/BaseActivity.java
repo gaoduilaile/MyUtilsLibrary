@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 
+import cn.krvision.toolmodule.reflect.MyViewUtils;
 import cn.krvision.toolmodule.utils.MyUtils;
 
 
@@ -26,7 +27,6 @@ public Activity mContext;
     protected <T extends View> T $(@IdRes int id) {
         return (T) super.findViewById(id);
     }
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

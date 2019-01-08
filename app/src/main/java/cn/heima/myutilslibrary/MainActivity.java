@@ -27,8 +27,9 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-
         context = this;
+
+//        startActivity(new Intent(context, ReflectActivity.class));
     }
 
     @OnClick({R.id.tv_bluetooth, R.id.tv_contact,R.id.tv_video, R.id.tv_pop,R.id.tv_tts})
